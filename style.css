@@ -1,0 +1,25 @@
+:root{--bg:#fff;--fg:#111;--muted:#666;--accent:#0f8c6d;--card:#f5f6f7;--line:#e4e6e8}
+@media(prefers-color-scheme:dark){:root{--bg:#111;--fg:#eee;--muted:#9a9a9a;--accent:#5fd3b0;--card:#1b1c1e;--line:#2a2c2f}}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text",system-ui,sans-serif;color:var(--fg);background:var(--bg)}
+main{max-width:760px;margin:0 auto;padding:40px 20px 64px}
+header.site{display:flex;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:28px}
+header.site a{color:var(--fg);text-decoration:none;font-weight:600}
+header.site nav{margin-left:auto;display:flex;gap:16px}
+header.site nav a{color:var(--muted);font-weight:500;font-size:15px}
+header.site nav a:hover{color:var(--accent)}
+h1{font-size:32px;line-height:1.2;margin:0 0 8px}
+h2{font-size:20px;margin:36px 0 10px}
+h3{font-size:17px;margin:24px 0 6px}
+p,li{color:var(--fg)}
+.lead{font-size:18px;color:var(--muted);margin-top:0}
+a{color:var(--accent)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;margin:16px 0}
+.shots{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:24px 0}
+.shots img{width:100%;height:auto;border-radius:18px;border:1px solid var(--line)}
+@media(max-width:560px){.shots{grid-template-columns:1fr 1fr}}
+footer{margin-top:48px;color:var(--muted);font-size:14px;border-top:1px solid var(--line);padding-top:16px}
+.badge{display:inline-block;background:var(--card);border:1px solid var(--line);border-radius:999px;padding:2px 10px;font-size:13px;color:var(--muted)}
+table{border-collapse:collapse;width:100%;font-size:15px}
+td,th{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+small{color:var(--muted)}

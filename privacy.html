@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GPT Track · Privacy policy</title>
+<meta name="description" content="Privacy policy for the GPT Track iPhone app, its companion server and its ChatGPT plugin.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<header class="site">
+  <a href="index.html">GPT Track</a>
+  <nav><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
+</header>
+
+<h1>Privacy policy</h1>
+<p class="lead">Effective 20 October 2026. Applies to the GPT Track app for iPhone, the optional GPT Track companion server and the GPT Track plugin for ChatGPT. <a href="#ro">Versiunea în română</a> este mai jos.</p>
+
+<div class="card">
+<strong>The short version.</strong> GPT Track does not collect your data. There are no accounts, no analytics, no advertising and no tracking. What you log stays on your iPhone, in Apple Health and in your own private iCloud. The developer never sees it. Data leaves your device only for features you turn on yourself, and this page lists every one of them.
+</div>
+
+<h2>1. Who is responsible</h2>
+<p>GPT Track is developed by Dimitrie-Alexandru Pîrvănescu, an individual developer based in Romania. Contact: <a href="mailto:pirvanescudimitrie@gmail.com">pirvanescudimitrie@gmail.com</a>.</p>
+
+<h2>2. What the app stores, and where</h2>
+<p>The app keeps a nutrition diary: food entries (name, brand, quantity, calories and nutrients), water, weigh-ins, saved foods and recipes, your profile (name, sex, birth date, height, activity level, goal, units) and your daily targets. It stores them:</p>
+<ul>
+  <li><strong>On your iPhone</strong>, in the app's private container. Nothing is sent to the developer.</li>
+  <li><strong>In your private iCloud database</strong>, when you are signed in to iCloud. The diary, foods, recipes, profile and targets are mirrored to the CloudKit private database of your Apple Account so your other devices see the same data. Only you can read that database; the developer has no access to it and cannot read it. <strong>Weigh-ins and anything read from the Health app are never stored in iCloud.</strong> You can stop the mirroring at any time in the Settings app under your Apple Account → iCloud.</li>
+  <li><strong>In Apple Health</strong>, see section 3.</li>
+</ul>
+<p>Secrets you enter (an OpenAI API key, the companion-server token) are stored only in the iOS Keychain.</p>
+
+<h2>3. Health data (HealthKit)</h2>
+<p>With your permission in the system Health sheet, GPT Track:</p>
+<ul>
+  <li><strong>writes</strong> the calories, protein, carbohydrates, fat, fibre, sugar, saturated fat, sodium, water and weight you log;</li>
+  <li><strong>reads</strong> your body weight, step count, active energy and height, and your date of birth and biological sex to pre-fill your profile.</li>
+</ul>
+<p>Health data is used only to show your diary, your activity and your targets inside the app. It is <strong>never used for advertising, marketing or data mining, never sold, never shared with third parties</strong>, and <strong>never stored in iCloud</strong> by the app. Weight samples read from Health are kept only on the device that read them. When you delete an entry in GPT Track, the app deletes exactly the Health samples it wrote for that entry. You can revoke access at any time in the Health app under Sharing → Apps.</p>
+
+<h2>4. Features that send data elsewhere (all optional)</h2>
+<table>
+<tr><th>Feature</th><th>What is sent</th><th>To whom</th></tr>
+<tr><td>Food search and barcode scanning</td><td>The search text or the barcode, with a User-Agent naming the app. No personal data.</td><td><a href="https://world.openfoodfacts.org">Open Food Facts</a>, a non-profit open database (<a href="https://world.openfoodfacts.org/privacy">their privacy policy</a>).</td></tr>
+<tr><td>AI coach, with your own OpenAI API key</td><td>Your question plus a compact text summary of the day (calories, macros, water, goal). Never raw Health data, never your name.</td><td>OpenAI's API, under <a href="https://openai.com/policies/privacy-policy">OpenAI's privacy policy</a>. Off unless you enter a key.</td></tr>
+<tr><td>Companion server and ChatGPT plugin</td><td>Your diary (food entries, water, weigh-ins) and your targets, so that ChatGPT can read and update them.</td><td>A server <em>you</em> run, or the person you got it from. The developer of GPT Track operates no server and receives nothing. What ChatGPT does with the conversation is covered by OpenAI's policies.</td></tr>
+<tr><td>Reminders</td><td>Nothing. Reminders are local notifications scheduled on the device.</td><td>No one.</td></tr>
+<tr><td>Siri and Shortcuts</td><td>Nothing beyond what Apple processes for Siri; the actions run inside the app on your device.</td><td>Apple, under Apple's Siri privacy terms.</td></tr>
+</table>
+
+<h2>5. What the app does not do</h2>
+<ul>
+  <li>No account or sign-up, no email collection.</li>
+  <li>No analytics, crash reporting or usage statistics sent to the developer or to anyone else.</li>
+  <li>No advertising and no advertising identifiers.</li>
+  <li>No tracking across apps or websites, no data brokers, no sale of data.</li>
+</ul>
+
+<h2>6. Deleting your data</h2>
+<ul>
+  <li><strong>Settings → Data → Delete all</strong> in the app removes every diary entry from the device and, when iCloud is on, from your private iCloud database.</li>
+  <li>Deleting the app removes its local data. iCloud data can also be removed in the Settings app under your Apple Account → iCloud → Manage Storage → GPT Track.</li>
+  <li>Health samples the app wrote can be deleted in the Health app (Sharing → Apps → GPT Track → Delete All Data).</li>
+  <li>If you paired a companion server, delete its database or ask whoever runs it to do so.</li>
+</ul>
+
+<h2>7. Children</h2>
+<p>GPT Track is not directed at children under 13 and does not knowingly collect data from them. Calorie targets are estimates for adults; see the <a href="terms.html">terms of use</a>.</p>
+
+<h2>8. Security</h2>
+<p>Data on the device is protected by iOS data protection. iCloud data is protected by your Apple Account. All network connections use HTTPS. Secrets are kept in the Keychain.</p>
+
+<h2>9. Your rights</h2>
+<p>Because the developer holds no personal data about you, there is nothing to access, correct or export on our side; the app itself gives you export (CSV and JSON) and deletion. If you live in the European Union you may still contact us with any question or complaint about this policy, and you have the right to lodge a complaint with your data-protection authority.</p>
+
+<h2>10. Changes</h2>
+<p>If a future version of the app changes what it does with your data, this page will be updated and the app will ask for any new permission before using it. The current version is always at this address.</p>
+
+<hr id="ro" style="margin:48px 0;border:0;border-top:1px solid var(--line)">
+
+<h1>Politica de confidențialitate</h1>
+<p class="lead">Valabilă din 20 octombrie 2026. Se aplică aplicației GPT Track pentru iPhone, serverului companion opțional și pluginului GPT Track pentru ChatGPT. În caz de diferențe, versiunea în engleză de mai sus are prioritate.</p>
+
+<div class="card">
+<strong>Pe scurt.</strong> GPT Track nu îți colectează datele. Nu există conturi, analytics, reclame sau urmărire. Ce loghezi rămâne pe iPhone-ul tău, în Apple Health și în iCloud-ul tău privat. Dezvoltatorul nu le vede niciodată. Datele pleacă de pe dispozitiv doar pentru funcțiile pe care le pornești tu, enumerate mai jos.
+</div>
+
+<h2>1. Cine răspunde</h2>
+<p>GPT Track este dezvoltată de Dimitrie-Alexandru Pîrvănescu, dezvoltator individual din România. Contact: <a href="mailto:pirvanescudimitrie@gmail.com">pirvanescudimitrie@gmail.com</a>.</p>
+
+<h2>2. Ce stochează aplicația și unde</h2>
+<ul>
+  <li><strong>Pe iPhone</strong>, în containerul privat al aplicației. Nimic nu este trimis dezvoltatorului.</li>
+  <li><strong>În baza ta de date iCloud privată</strong>, când ești conectat la iCloud: jurnalul, alimentele, rețetele, profilul și țintele, ca să le vezi și pe celelalte dispozitive ale tale. Doar tu poți citi această bază; dezvoltatorul nu are acces. <strong>Cântăririle și orice este citit din aplicația Sănătate nu sunt stocate niciodată în iCloud.</strong></li>
+  <li><strong>În Apple Health</strong>, vezi punctul 3.</li>
+</ul>
+
+<h2>3. Date de sănătate (HealthKit)</h2>
+<p>Cu permisiunea ta, aplicația <strong>scrie</strong> în Sănătate caloriile, macronutrienții, apa și greutatea pe care le loghezi și <strong>citește</strong> greutatea, pașii, energia activă, înălțimea, data nașterii și sexul biologic pentru a-ți completa profilul. Datele de sănătate sunt folosite doar pentru afișare în aplicație. <strong>Nu sunt folosite pentru publicitate sau marketing, nu sunt vândute, nu sunt partajate cu terți și nu sunt stocate în iCloud.</strong> Când ștergi o înregistrare, aplicația șterge exact mostrele pe care le-a scris pentru ea în Sănătate.</p>
+
+<h2>4. Funcții care trimit date în altă parte (toate opționale)</h2>
+<ul>
+  <li><strong>Căutare și scanare de coduri de bare:</strong> textul căutat sau codul de bare ajunge la Open Food Facts, o bază de date non-profit. Fără date personale.</li>
+  <li><strong>Antrenor AI, cu cheia ta OpenAI:</strong> întrebarea ta și un rezumat text al zilei (calorii, macro, apă, obiectiv) ajung la API-ul OpenAI. Oprit până introduci o cheie.</li>
+  <li><strong>Server companion și plugin ChatGPT:</strong> jurnalul și țintele ajung pe un server pe care îl administrezi tu. Dezvoltatorul nu operează niciun server și nu primește nimic.</li>
+  <li><strong>Remindere, Siri și Comenzi rapide:</strong> rulează pe dispozitiv; nu se trimite nimic dezvoltatorului.</li>
+</ul>
+
+<h2>5. Ștergerea datelor</h2>
+<p>Settings → Data → Delete all în aplicație șterge tot jurnalul de pe dispozitiv și, dacă iCloud este activ, din iCloud-ul tău. Ștergerea aplicației elimină datele locale; datele din iCloud se pot șterge și din Configurări → Cont Apple → iCloud → Gestionare stocare. Mostrele din Sănătate se pot șterge din aplicația Sănătate.</p>
+
+<h2>6. Copii</h2>
+<p>Aplicația nu se adresează copiilor sub 13 ani și nu colectează cu bună știință date de la aceștia.</p>
+
+<h2>7. Drepturile tale</h2>
+<p>Dezvoltatorul nu deține date personale despre tine; exportul (CSV, JSON) și ștergerea sunt disponibile direct în aplicație. Pentru orice întrebare sau plângere ne poți scrie la adresa de mai sus; ai dreptul să depui o plângere la Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal.</p>
+
+<footer>© 2026 Dimitrie-Alexandru Pîrvănescu · <a href="support.html">Support</a> · <a href="terms.html">Terms of use</a></footer>
+</main>
+</body>
+</html>
